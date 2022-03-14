@@ -1,0 +1,198 @@
+body{
+    border: 0.2cm;
+    border-style: double;
+    border-color: rgb(255, 115, 0);
+}
+a:link{
+    color:black;
+    background-color: transparent;
+}
+.title{
+    background-color: #008b8b;
+    animation: title-01 40s infinite;
+}
+.title-1{
+    animation: line-11 40s infinite;
+}
+.title-2{
+    animation: line-12 40s infinite;
+}
+.photo-1{
+    background-color: darkcyan;
+    Display:flex;
+    justify-content: space-evenly;
+    animation: photoname-01 40s infinite;
+}
+.name-1{
+    background-color: darkcyan;
+    Display:flex;
+    justify-content: space-evenly;
+    
+    animation: photoname-01 40s infinite;
+}
+@keyframes title-01 {
+    0%{background-color:rgba(182, 17, 17, 0.76)}
+    50%{background-color:rgba(255, 230, 0, 0.801)}
+    100%{background-color:rgba(182, 17, 17, 0.76)}
+}
+@keyframes photoname-01 {
+    0%{background-color:rgba(255, 230, 0, 0.801)}
+    50%{background-color:rgba(182, 17, 17, 0.76)}
+    100%{background-color:rgba(255, 230, 0, 0.801)}
+    0%{color:rgba(182, 17, 17, 0.76)}
+    50%{color:rgba(255, 230, 0, 0.801)}
+    100%{color:rgba(182, 17, 17, 0.76)}
+}
+.line-1{
+    Display:flex;
+    justify-content: space-around;
+    animation: line-11 40s infinite;
+}
+.line-2{
+    Display:flex;
+    justify-content: space-around;
+    animation: line-12 40s infinite;
+}
+.line-01{
+    Display:flex;
+    justify-content: space-around;
+    animation: line-11 40s infinite;
+}
+.line-02{
+    Display:flex;
+    justify-content: space-around;
+    animation: line-12 40s infinite;
+}
+@keyframes line-11 {
+    0%{background-color:rgb(68, 0, 255)}
+    50%{background-color:rgb(9, 255, 0)}
+    100%{background-color:rgb(68, 0, 255)}
+    0%{color:rgb(9, 255, 0)}
+    50%{color:rgb(68, 0, 255)}
+    100%{color:rgb(9, 255, 0)}
+}
+@keyframes line-12 {
+    0%{background-color:rgb(9, 255, 0)}
+    50%{background-color:rgb(68, 0, 255)}
+    100%{background-color:rgb(9, 255, 0)}
+    0%{color:rgb(68, 0, 255)}
+    50%{color:rgb(9, 255, 0)}
+    100%{color:rgb(68, 0, 255)}
+}
+.top{
+    background-color: black;
+    overflow:hidden;
+}
+.top a{
+    float: left;
+    color:white;
+    padding:14px 16px;
+    font-size:16px;
+    text-align: center;
+}
+.menu{
+    overflow: hidden;
+    float:left
+}
+.menu , .menubt{
+    background-color: black;
+    color:white;
+    padding:14px 16px;
+}
+.menu:hover .menubt{
+    background-color: blue;
+}
+.menu:hover .menudw{
+    display:block;
+}
+.menudw{
+    display: none;
+  position: absolute;
+  background-color: #33ff00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.menudw a{
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.menudw a:hover {
+    background-color: rgb(0, 255, 170);
+  }
+
+
+
+
+.menu1{
+    overflow: hidden;
+    float:left
+}
+.menu1 , .menubt1{
+    background-color: black;
+    color:white;
+    padding:14px 16px;
+}
+.menu1:hover .menubt1{
+    background-color: blue;
+}
+.menu1:hover .menudw1{
+    display:block;
+}
+.menudw1{
+    display: none;
+  position: absolute;
+  background-color: #33ff00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.menudw1 a{
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.menudw1 a:hover {
+    background-color: rgb(0, 255, 170);
+  }
+  .menu2{
+    overflow: hidden;
+    float:left
+}
+.menu2 , .menubt2{
+    background-color: black;
+    color:white;
+    padding:14px 16px;
+}
+.menu2:hover .menubt2{
+    background-color: blue;
+}
+.menu2:hover .menudw2{
+    display:block;
+}
+.menudw2{
+    display: none;
+  position: absolute;
+  background-color: #33ff00;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.menudw2 a{
+    float: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.menudw2 a:hover {
+    background-color: rgb(0, 255, 170);
+  }
