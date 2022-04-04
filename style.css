@@ -3,6 +3,12 @@ body{
     border-style: double;
     border-color: rgb(255, 115, 0);
 }
+.d1{
+ float:right;
+ overflow:hidden;
+ position: absolute;
+ right:20px;
+}
 a:link{
     color:black;
     background-color: transparent;
@@ -122,7 +128,7 @@ a:link{
     text-align: left;
 }
 .menudw a:hover {
-    background-color: rgb(0, 255, 170);
+    background-color: rgb(0, 255, 255);
   }
 
 
@@ -160,7 +166,7 @@ a:link{
     text-align: left;
 }
 .menudw1 a:hover {
-    background-color: rgb(0, 255, 170);
+    background-color: rgb(0, 255, 255);
   }
   .menu2{
     overflow: hidden;
@@ -194,5 +200,5 @@ a:link{
     text-align: left;
 }
 .menudw2 a:hover {
-    background-color: rgb(0, 255, 170);
+    background-color: rgb(0, 255, 255);
   }

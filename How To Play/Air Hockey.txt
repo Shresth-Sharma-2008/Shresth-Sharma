@@ -1,0 +1,5 @@
+This game cannot be played on a moblie device, it requires a PC.
+Press "Space" key to serve the ball.
+Move your cursor over the player paddle to move it.
+Avoid the ball to touch the paddle behing the player paddle, try to hit the paddle after computer paddle to score points.
+Enjoy the game!😀
