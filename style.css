@@ -1,7 +1,8 @@
-body{
-    border: 0.2cm;
-    border-style: double;
-    border-color: rgb(255, 115, 0);
+#e1{
+    display:none;
+}
+#e2{
+    width:100%
 }
 
 a:link{
