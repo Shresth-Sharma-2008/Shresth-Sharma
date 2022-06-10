@@ -3,6 +3,28 @@
     <head>
         <title>Shresth Sharma</title>
         <link rel="styleSheet" type="text/css" href="style.css">
+     <link rel="shortcut icon" href="logo.png">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCOKqWStYHNdKi9GOZjSipEhZHePeiBGW0",
+    authDomain: "shresth-s-portfolio-v2.firebaseapp.com",
+    projectId: "shresth-s-portfolio-v2",
+    storageBucket: "shresth-s-portfolio-v2.appspot.com",
+    messagingSenderId: "235406267869",
+    appId: "1:235406267869:web:ba277706ba308fcb1c5234"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    
     </head>
     <body>
         <div class="top">
@@ -47,6 +69,10 @@
             <div id="games">
                 <div class="title-1">
                     <img src="">
+                </div>
+                <div class="flex">
+                    <h1>Views : </h1>
+                    <h1 id="demo"> --</h1>
                 </div>
                 <div class="line-1">
                     <video src="logo1.mp4" autoplay="true" loop="true" muted>
@@ -208,5 +234,37 @@
                     <a target="_blank" href="How To Play/Truth And Dare.txt">How To Play?</a>
                 </div>
             </div>
+            <script>
+
+var s1=0;
+var s2=0;
+function setup(){
+
+    database=firebase.database();
+    var gameStateRef  = database.ref('Views');
+    gameStateRef.on("value",function(data){
+    s1 = data.val();
+    });
+    s2=1  
+    console.log("Setup Working")
+}
+    function draw(){
+        
+        if(s1!==0){
+           database.ref('/').update({
+               Views:s1
+           });
+        }
+        if(s2===1&&s1!==0){
+            s1=s1+1
+            s2=0
+            document.getElementById("demo").innerHTML = s1;
+            console.log("a")
+        }
+
+    }
+    setup();
+    setInterval(draw,100)
+            </script>
     </body>
 </html>
