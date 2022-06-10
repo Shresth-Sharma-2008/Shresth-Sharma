@@ -3,7 +3,10 @@ body{
     border-style: double;
     border-color: rgb(255, 115, 0);
 }
-
+.flex{
+    display:flex;
+    animation: line-11 40s infinite;
+}
 a:link{
     color:black;
     background-color: transparent;
